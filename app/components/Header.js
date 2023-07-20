@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
 	return (
-		<div className="flex place-content-around">
+		<header className="flex place-content-around">
 			<h2>Andrew Anderson</h2>
 			<nav>
 				<ul>
@@ -17,6 +17,6 @@ export default function Header() {
 					</li>
 				</ul>
 			</nav>
-		</div>
+		</header>
 	);
 }
