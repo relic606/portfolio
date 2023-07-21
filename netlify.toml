@@ -1,6 +1,0 @@
-[[redirects]]
-  from = "/projects/game"
-  to = "https://warm-sunshine-014665.netlify.app"
-  status = 200
-  force = true
-  signed = "API_SIGNATURE_TOKEN_PLACEHOLDER"
