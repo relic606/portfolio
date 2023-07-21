@@ -2,16 +2,7 @@
 import colors from "tailwindcss/colors";
 
 module.exports = {
-	content: {
-		relative: true,
-		files: [
-			"./app/layout.js",
-			"./app/page.js",
-			"./app/skills/page.js",
-			"./app/projects/page.js",
-			"./app/components/Header.js"
-		]
-	},
+	content: ["./app/**/*.{js,ts,jsx,tsx}"],
 	safelist: [],
 	theme: {
 		extend: {},

@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import globalStyles from "../styles/global.css";
-import Head from "next/head";
+import Footer from "./components/Footer";
 
 import { Open_Sans } from "next/font/google";
 
@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
 			<body className={`bg-sky-100 h-screen ${openSans.className}`}>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
