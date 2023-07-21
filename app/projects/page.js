@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Projects() {
 	return (
 		<main className="flex place-content-center">
@@ -26,7 +24,7 @@ export default function Projects() {
 					</a>
 				</li>
 				<li className="my-4 hover:text-sky-500 transition delay-75">
-					<Link href={"/projects/game"}>Tile-Game</Link>
+					<a href={"/projects/game"}>Tile-Game</a>
 				</li>
 			</ul>
 		</main>
