@@ -1,13 +1,13 @@
 export default function Projects() {
 	return (
-		<main className="place-content-center">
-			<ul>
-				<li>
+		<main className="flex place-content-center h-full">
+			<ul className="flex flex-col my-8">
+				<li className="my-4 hover:text-sky-500 transition delay-75">
 					<a target="_blank" href="https://codepen.io/relic606/full/LYOyvYg">
 						Codepen HTML, CSS, and Javascript project
 					</a>
 				</li>
-				<li>
+				<li className="my-4 hover:text-sky-500 transition delay-75">
 					<a
 						target="_blank"
 						href="https://share.vidyard.com/watch/QdoAUHpTjcZ34SjP5bZSqT?"
@@ -15,7 +15,7 @@ export default function Projects() {
 						DevMountain Foundations Capstone Project
 					</a>
 				</li>
-				<li>
+				<li className="my-4 hover:text-sky-500 transition delay-75">
 					<a
 						target="_blank"
 						href="https://share.vidyard.com/watch/gWtgwMGcd6L36fTpUE8NQS?"
@@ -23,7 +23,9 @@ export default function Projects() {
 						DevMountain Web Development Capstone Project
 					</a>
 				</li>
-				<li>Tile-Game</li>
+				<li className="my-4 hover:text-sky-500 transition delay-75">
+					Tile-Game
+				</li>
 			</ul>
 		</main>
 	);

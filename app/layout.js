@@ -1,5 +1,14 @@
 import Header from "./components/Header";
 import globalStyles from "../styles/global.css";
+import Head from "next/head";
+
+import { Open_Sans } from "next/font/google";
+
+const openSans = Open_Sans({
+	weight: "500",
+	style: "normal",
+	subsets: ["latin"]
+});
 
 export const metadata = {
 	title: "Andrew Anderson Portfolio",
@@ -9,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className="bg-sky-100">
+			<body className={`bg-sky-100 h-screen ${openSans.className}`}>
 				<Header />
 				{children}
 			</body>

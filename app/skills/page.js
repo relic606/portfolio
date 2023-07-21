@@ -1,8 +1,9 @@
 export default function Skills() {
 	return (
-		<main className="flex place-content-around">
-			<div>Skills page</div>
-			<div>Test</div>
+		<main>
+			<section className="flex place-content-center h-full my-8">
+				Skills page
+			</section>
 		</main>
 	);
 }

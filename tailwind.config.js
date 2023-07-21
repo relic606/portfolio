@@ -5,13 +5,14 @@ module.exports = {
 	content: {
 		relative: true,
 		files: [
+			"./app/layout.js",
 			"./app/page.js",
 			"./app/skills/page.js",
 			"./app/projects/page.js",
 			"./app/components/Header.js"
 		]
 	},
-	safelist: ["place-content-around", "bg-sky-100"],
+	safelist: [],
 	theme: {
 		extend: {},
 		colors: {
