@@ -40,7 +40,7 @@ export default function Projects() {
 					<li className="my-4 hover:text-white hover:bg-sky-800 hover:rounded transition delay-75 flex p-4 bg-sky-200 rounded hover:scale-105 hover:shadow-lg hover:shadow-sky-900">
 						<Image src={reactImg} width={51} height={45} className="mr-4" />
 						<div>
-							<h1 className="text-xl">Tile-Game</h1>
+							<h1 className="text-xl">Card Game</h1>
 							<p className="text-sm">Card game built with React.js</p>
 						</div>
 					</li>
