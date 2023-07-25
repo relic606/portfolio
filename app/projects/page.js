@@ -11,7 +11,7 @@ export default function Projects() {
 					target="_blank"
 					href="https://share.vidyard.com/watch/QdoAUHpTjcZ34SjP5bZSqT?"
 				>
-					<li className="my-4 hover:text-white hover:bg-sky-800 hover:rounded transition delay-75 flex p-4 bg-sky-200 rounded hover:scale-110">
+					<li className="my-4 hover:text-white hover:bg-sky-800 hover:rounded transition delay-75 flex p-4 bg-sky-200 rounded hover:scale-105 hover:shadow-lg hover:shadow-sky-900">
 						<Image src={fullStackImg} width={50} height={50} className="mr-4" />
 						<div>
 							<h1 className="text-xl">
@@ -26,7 +26,7 @@ export default function Projects() {
 					href="https://share.vidyard.com/watch/gWtgwMGcd6L36fTpUE8NQS?"
 					className="flex"
 				>
-					<li className="my-4 hover:text-white hover:bg-sky-800 hover:rounded transition delay-75 flex p-4 bg-sky-200 rounded hover:scale-110">
+					<li className="my-4 hover:text-white hover:bg-sky-800 hover:rounded transition delay-75 flex p-4 bg-sky-200 rounded hover:scale-105 hover:shadow-lg hover:shadow-sky-900">
 						<Image src={fullStackImg} width={50} height={50} className="mr-4" />
 						<div>
 							<h1 className="text-xl">
@@ -37,7 +37,7 @@ export default function Projects() {
 					</li>
 				</a>
 				<a target="_blank" href={"/projects/game"}>
-					<li className="my-4 hover:text-white hover:bg-sky-800 hover:rounded transition delay-75 flex p-4 bg-sky-200 rounded hover:scale-110">
+					<li className="my-4 hover:text-white hover:bg-sky-800 hover:rounded transition delay-75 flex p-4 bg-sky-200 rounded hover:scale-105 hover:shadow-lg hover:shadow-sky-900">
 						<Image src={reactImg} width={51} height={45} className="mr-4" />
 						<div>
 							<h1 className="text-xl">Tile-Game</h1>
@@ -46,7 +46,7 @@ export default function Projects() {
 					</li>
 				</a>
 				<a target="_blank" href="https://codepen.io/relic606/full/LYOyvYg">
-					<li className="my-4 hover:text-white hover:bg-sky-800 hover:rounded transition delay-75 flex p-4 bg-sky-200 rounded hover:scale-110">
+					<li className="my-4 hover:text-white hover:bg-sky-800 hover:rounded transition delay-75 flex p-4 bg-sky-200 rounded hover:scale-105 hover:shadow-lg hover:shadow-sky-900">
 						<Image src={codepenImg} width={50} height={50} className="mr-4" />
 						<div>
 							<h1 className="text-xl">Terran Emporium</h1>
