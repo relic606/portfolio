@@ -14,7 +14,7 @@ export default function App() {
 				</div>
 				<div className="flex flex-col place-content-center text-center">
 					<p className="w-4/5 mx-auto my-8">
-						Thank you for visiting my website! My name is Andy, and I'm a
+						Thank you for visiting my website! My name is Andy, and Im a
 						full-stack web developer with a focus on front-end development.
 					</p>
 				</div>
