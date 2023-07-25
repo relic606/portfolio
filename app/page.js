@@ -19,10 +19,10 @@ export default function App() {
 					</p>
 				</div>
 			</section>
-			<div className="flex w-1/3 place-content-center mx-8">
+			<div className="flex w-1/4 place-content-center">
 				<div className="bg-black w-px h-5/6"></div>
 			</div>
-			<section className="flex flex-col text-center my-auto w-1/3">
+			<section className="flex flex-col text-center w-1/3">
 				<h1 className="text-lg underline underline-offset-4">
 					Skills & Languages
 				</h1>
