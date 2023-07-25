@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function App() {
 	return (
 		<main className="flex flex-row place-content-center m-16 rounded">
-			<section className="my-4 rounded flex place-content-center flex-col w-1/3">
+			<section className="my-4 rounded flex place-content-center flex-col w-1/3 pt-8">
 				<div className="flex place-content-center">
 					<Image
 						alt="my_photo"
@@ -20,7 +20,7 @@ export default function App() {
 				</div>
 			</section>
 			<div className="flex w-1/4 place-content-center">
-				<div className="bg-black w-px h-5/6"></div>
+				<div className="bg-black w-px h-2/6 m-auto"></div>
 			</div>
 			<section className="flex flex-col text-center w-1/3 place-content-center">
 				<h1 className="text-lg underline underline-offset-4">
