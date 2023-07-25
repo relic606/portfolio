@@ -22,7 +22,7 @@ export default function App() {
 			<div className="flex w-1/4 place-content-center">
 				<div className="bg-black w-px h-5/6"></div>
 			</div>
-			<section className="flex flex-col text-center w-1/3">
+			<section className="flex flex-col text-center w-1/3 place-content-center">
 				<h1 className="text-lg underline underline-offset-4">
 					Skills & Languages
 				</h1>
