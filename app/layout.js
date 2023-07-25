@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import { Open_Sans } from "next/font/google";
 
 const openSans = Open_Sans({
-	weight: "500",
+	weight: "600",
 	style: "normal",
 	subsets: ["latin"]
 });
