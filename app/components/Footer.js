@@ -3,6 +3,7 @@ export default function Footer() {
 		<footer className="bg-sky-950 text-white sticky top-[100vh] h-12 flex items-center">
 			<nav className="flex place-content-center w-screen">
 				<a
+					target="_blank"
 					href={"https://github.com/relic606"}
 					className="hover:text-sky-500 transition delay-75 px-8"
 				>
@@ -10,6 +11,7 @@ export default function Footer() {
 				</a>
 
 				<a
+					target="_blank"
 					href={"https://www.linkedin.com/in/andrew-anderson-50325749/"}
 					className="hover:text-sky-500 transition delay-75 px-8"
 				>

@@ -24,7 +24,9 @@ export default function Projects() {
 					</a>
 				</li>
 				<li className="my-4 hover:text-sky-500 transition delay-75">
-					<a href={"/projects/game"}>Tile-Game</a>
+					<a target="_blank" href={"/projects/game"}>
+						Tile-Game
+					</a>
 				</li>
 			</ul>
 		</main>
