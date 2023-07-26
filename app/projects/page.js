@@ -6,7 +6,7 @@ import reactImg from "/react-logo.png";
 export default function Projects() {
 	return (
 		<main className="flex place-content-center">
-			<ul className="flex flex-col my-8">
+			<ul className="flex flex-col my-8 px-20 py-8">
 				<a
 					target="_blank"
 					href="https://share.vidyard.com/watch/QdoAUHpTjcZ34SjP5bZSqT?"

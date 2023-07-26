@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Header() {
 	return (
 		<header className="flex place-content-around bg-sky-950 text-white py-2">
-			<h2 className="flex justify-center my-auto">Andrew Anderson</h2>
+			<h2 className="flex justify-center my-auto text-xl">Andrew Anderson</h2>
 			<nav>
 				<ul>
 					<li>
