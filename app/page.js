@@ -20,8 +20,7 @@ export default function App() {
 						<br></br>
 						<br></br>
 						After nearly 15 years in the insurance industry, I decided it was
-						time for a change to a more fulfilling career, and I havent looked
-						back since.
+						time for a change.
 					</p>
 				</div>
 			</section>

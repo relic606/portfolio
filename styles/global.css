@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-link {
+	/* Regular styles for the navigation links */
+}
+
+.nav-link.active {
+	/* Styles for the active link */
+	color: black;
+}
