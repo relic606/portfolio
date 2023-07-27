@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "../styles/global.css";
 
 export default function App() {
   return (
@@ -37,24 +36,30 @@ export default function App() {
               style={{ transform: "rotate(300deg)", animationDelay: "2.5s" }}
             ></div>
           </div>
-        <Image
-          objectPosition="absolute"
-          alt="my_photo"
-          height={250}
-          width={250}
-          className="place-self-center rounded-full bg-sky-100"
-        ></Image>
+          <Image
+            alt="my_photo"
+            height={250}
+            width={250}
+            className="place-self-center rounded-full bg-sky-100"
+          ></Image>
         </div>
 
         <div className="flex flex-col place-content-center text-center">
           <p className="w-4/5 mx-auto my-8">
-            Thank you for visiting my website! My name is Andy, and Im a
-            full-stack web developer located in South Jordan, Utah, with a focus
-            on front-end development.
+            Thank you for visiting my website! My name is Andy, and I{"'"}m a
+            full-stack web developer with a focus on front-end development,
+            residing in South Jordan, Utah.
             <br></br>
             <br></br>
             After nearly 15 years in the insurance industry, I decided it was
-            time for a change.
+            time for a change. I earned my degree in Mathematics, which has
+            always been a passion of mine, and I was determined to use it!
+            <br></br>
+            <br></br>
+            Beyond programming, I am an avid gamer with a love and appreciation
+            for computers and technology. When I{"'"}m not playing a few rounds
+            of Overwatch 2 with friends, following my favorite players Starcraft
+            matches, or reading up on what{"'"}s on new on the horizon,
           </p>
         </div>
       </section>

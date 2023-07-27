@@ -11,8 +11,8 @@
   color: black;
 }
 
-.profile-circle-container{
-	position: relative;
+.profile-circle-container {
+  position: relative;
 }
 .circle {
   position: absolute;
@@ -24,18 +24,18 @@
 }
 @keyframes mymove {
   0% {
-    border-bottom-right-radius: 50%; /* 4px */
+    border-bottom-right-radius: 50%;
   }
   25% {
-    border-bottom-right-radius: 40% /* 4px */;
+    border-bottom-right-radius: 40%;
   }
   50% {
-    border-bottom-right-radius: 45% /* 4px */;
+    border-bottom-right-radius: 45%;
   }
   75% {
-    border-bottom-right-radius: 40% /* 4px */;
+    border-bottom-right-radius: 40%;
   }
   100% {
-    border-bottom-right-radius: 50% /* 4px */;
+    border-bottom-right-radius: 50%;
   }
 }
