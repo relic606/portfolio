@@ -3,10 +3,39 @@
 @tailwind utilities;
 
 .nav-link {
-	/* Regular styles for the navigation links */
+  /* Regular styles for the navigation links */
 }
 
 .nav-link.active {
-	/* Styles for the active link */
-	color: black;
+  /* Styles for the active link */
+  color: black;
+}
+
+.profile-circle-container{
+	position: relative;
+}
+.circle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: rgb(8 47 73 / var(--tw-bg-opacity));
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  0% {
+    border-bottom-right-radius: 50%; /* 4px */
+  }
+  25% {
+    border-bottom-right-radius: 40% /* 4px */;
+  }
+  50% {
+    border-bottom-right-radius: 45% /* 4px */;
+  }
+  75% {
+    border-bottom-right-radius: 40% /* 4px */;
+  }
+  100% {
+    border-bottom-right-radius: 50% /* 4px */;
+  }
 }
