@@ -43,7 +43,7 @@ export default function App() {
 							alt="linkedin image"
 							height={30}
 							width={30}
-							src="/linkedin.jpg"
+							src="/linkedin.png"
 							className="rounded-full"
 						></Image>
 						<p className="pl-2">LinkedIn</p>
