@@ -1,7 +1,4 @@
 import Image from "next/image";
-import codepenImg from "/codepen-logo.png";
-import fullStackImg from "/full-stack.png";
-import reactImg from "/react-logo.png";
 
 export default function Projects() {
 	return (
@@ -12,7 +9,13 @@ export default function Projects() {
 					href="https://share.vidyard.com/watch/QdoAUHpTjcZ34SjP5bZSqT?"
 				>
 					<li className="my-4 hover:text-white hover:bg-sky-800 hover:rounded transition delay-75 flex p-4 bg-sky-200 rounded hover:scale-105 hover:shadow-lg hover:shadow-sky-900">
-						<Image src={fullStackImg} width={50} height={50} className="mr-4" />
+						<Image
+							src="/full-stack.png"
+							alt="full-stack image"
+							width={50}
+							height={50}
+							className="mr-4"
+						/>
 						<div>
 							<h1 className="text-xl">
 								DevMountain Foundations Capstone Project
@@ -27,7 +30,13 @@ export default function Projects() {
 					className="flex"
 				>
 					<li className="my-4 hover:text-white hover:bg-sky-800 hover:rounded transition delay-75 flex p-4 bg-sky-200 rounded hover:scale-105 hover:shadow-lg hover:shadow-sky-900">
-						<Image src={fullStackImg} width={50} height={50} className="mr-4" />
+						<Image
+							src="/full-stack.png"
+							alt="full-stack image"
+							width={50}
+							height={50}
+							className="mr-4"
+						/>
 						<div>
 							<h1 className="text-xl">
 								DevMountain Web Development Capstone Project
@@ -38,7 +47,13 @@ export default function Projects() {
 				</a>
 				<a target="_blank" href={"/projects/game"}>
 					<li className="my-4 hover:text-white hover:bg-sky-800 hover:rounded transition delay-75 flex p-4 bg-sky-200 rounded hover:scale-105 hover:shadow-lg hover:shadow-sky-900">
-						<Image src={reactImg} width={51} height={45} className="mr-4" />
+						<Image
+							src="/react-logo.png"
+							alt="react image"
+							width={51}
+							height={45}
+							className="mr-4"
+						/>
 						<div>
 							<h1 className="text-xl">Card Game</h1>
 							<p className="text-sm">Card game built with React.js</p>
@@ -47,7 +62,13 @@ export default function Projects() {
 				</a>
 				<a target="_blank" href="https://codepen.io/relic606/full/LYOyvYg">
 					<li className="my-4 hover:text-white hover:bg-sky-800 hover:rounded transition delay-75 flex p-4 bg-sky-200 rounded hover:scale-105 hover:shadow-lg hover:shadow-sky-900">
-						<Image src={codepenImg} width={50} height={50} className="mr-4" />
+						<Image
+							src="/codepen-logo.png"
+							alt="codepen image"
+							width={50}
+							height={50}
+							className="mr-4"
+						/>
 						<div>
 							<h1 className="text-xl">Terran Emporium</h1>
 							<p className="text-sm">
