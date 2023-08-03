@@ -43,13 +43,7 @@ export default function Skills() {
   return (
     <section className="flex flex-col w-2/5 place-content-center px-8 border h-fit my-auto rounded-2xl">
       <div className="flex items-center pl-1 my-4 pt-4">
-        <Image
-          src="/skills.png"
-          alt="skills image"
-          width={30}
-          height={30}
-          className=""
-        />
+        <Image src="/skills.png" alt="skills image" width={30} height={30} />
         <div className="pl-4 font-semibold">Skills</div>
       </div>
       <div className="flex flex-col">
@@ -61,7 +55,7 @@ export default function Skills() {
                 alt={skill.language + " logo"}
                 width={50}
                 height={50}
-                className="p-2 border rounded-full drop-shadow-md"
+                className="p-2 border border-gray-50 rounded-full shadow-sm shadow-gray-400 bg-white"
               ></Image>
               <div className="flex flex-col w-full pl-4 ">
                 <p className="font-semibold">{skill.language}</p>
