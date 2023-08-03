@@ -2,11 +2,9 @@ import Header from "./components/Header";
 import globalStyles from "../styles/global.css";
 // import Footer from "./components/Footer";
 
-import { Open_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const openSans = Open_Sans({
-  weight: "600",
-  style: "normal",
+const inter = Inter({
   subsets: ["latin"],
 });
 
@@ -18,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-sky-100 h-screen ${openSans.className}`}>
+      <body className={`bg-sky-100 h-screen ${inter.className}`}>
         <Header />
         {children}
         {/* <Footer /> */}

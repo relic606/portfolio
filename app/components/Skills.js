@@ -1,103 +1,94 @@
 import Image from "next/image";
 
 const SKILLS = [
-	{
-		language: "Javascript",
-		description:
-			"Utilized for many school/personal projects, as well as for full-stack applications",
-		dates: "2012 - Present",
-		image: "/javascript-logo.png"
-	},
-	{
-		language: "HTML",
-		description:
-			"Hundreds of hours creating misc. webpage formats and several completed projects",
-		dates: "2021 - Present",
-		image: "/html-logo.png"
-	},
-	{
-		language: "CSS",
-		description:
-			"Hundreds of hours creating misc. webpage formats and several completed projects",
-		dates: "2021 - Present",
-		image: "/css-logo.png"
-	},
-	{
-		language: "React.js",
-		description:
-			"Created a complex card-game, in addition to utilizing components for various webpages",
-		dates: "2022 - Present",
-		image: "/react-logo-skills.png"
-	},
-	{
-		language: "Next.js",
-		description: "Description",
-		dates: "2022 - Present",
-		image: "/next-logo.png"
-	},
-	{
-		language: "Tailwind CSS",
-		description: "Description",
-		dates: "2022 - Present",
-		image: "/tailwind-logo.png"
-	},
-	{
-		language: "PostgreSQL",
-		description:
-			"Designed & implemented a database for multiple full-stack web applications",
-		dates: "2022 - Present",
-		image: "/postgresql-logo.png"
-	}
+  {
+    language: "Javascript",
+    description: "Super good at it",
+    year: "2012",
+    image: "/javascript-logo.png",
+  },
+  {
+    language: "HTML & CSS",
+    description: "Just amazing, truly",
+    year: "2021",
+    image: "/html-css-logo.png",
+  },
+  {
+    language: "React.js",
+    description: "Pretty good at that too",
+    year: "2022",
+    image: "/react-logo-skills.png",
+  },
+  {
+    language: "Next.js",
+    description: "Awesome in every way",
+    year: "2022",
+    image: "/next-logo.png",
+  },
+  {
+    language: "Tailwind CSS",
+    description: "Wow, an inspiration",
+    year: "2022",
+    image: "/tailwind-logo.png",
+  },
+  {
+    language: "PostgreSQL",
+    description: "Saved stuff to database",
+    year: "2022",
+    image: "/postgresql-logo.png",
+  },
 ];
 
 export default function Skills() {
-	return (
-		<section className="flex flex-col w-2/5 place-content-center p-2 border h-fit my-auto rounded-2xl">
-			<div className="flex items-center">
-				<Image
-					src="/skills.png"
-					alt="skills image"
-					width={50}
-					height={50}
-					className="p-2 border rounded-full"
-				/>
-				<div className="pl-4">Skills</div>
-			</div>
-			<div className="flex flex-col">
-				{SKILLS.map((skill) => {
-					return (
-						<div key={skill.language} className="flex items-center px-4 py-2">
-							<Image
-								src={skill.image}
-								alt={skill.language + " logo"}
-								width={50}
-								height={50}
-								className="p-1 border rounded-full"
-							></Image>
-							<div className="flex flex-col w-full pl-4">
-								{skill.language}
-								<div className="flex justify-between text-gray-500 text-sm">
-									<div className="flex flex-wrap w-2/3">
-										{" "}
-										{skill.description}
-									</div>
-									<div className="w-fit ml-4">{skill.dates} </div>
-								</div>
-							</div>
-						</div>
-					);
-				})}
-			</div>
-			<div className="w-full flex justify-center py-4">
-				Download Resume{" "}
-				<Image
-					src="/download.png"
-					alt="download image"
-					width={25}
-					height={25}
-					className="opacity-60 mt-1"
-				></Image>
-			</div>
-		</section>
-	);
+  return (
+    <section className="flex flex-col w-2/5 place-content-center px-8 border h-fit my-auto rounded-2xl">
+      <div className="flex items-center pl-1 my-4 pt-4">
+        <Image
+          src="/skills.png"
+          alt="skills image"
+          width={30}
+          height={30}
+          className=""
+        />
+        <div className="pl-4 font-semibold">Skills</div>
+      </div>
+      <div className="flex flex-col">
+        {SKILLS.map((skill) => {
+          return (
+            <div key={skill.language} className="flex items-center py-4">
+              <Image
+                src={skill.image}
+                alt={skill.language + " logo"}
+                width={50}
+                height={50}
+                className="p-2 border rounded-full drop-shadow-md"
+              ></Image>
+              <div className="flex flex-col w-full pl-4 ">
+                <p className="font-semibold">{skill.language}</p>
+                <div className="flex justify-between text-gray-500 font-normal">
+                  <div className="flex flex-wrap w-2/3 text-gray-500">
+                    {" "}
+                    {skill.description}
+                  </div>
+                  <div className="w-fit ml-4 text-gray-400">
+                    {skill.year} &mdash; Present{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <div className="w-full flex justify-center pt-4 pb-8 font-semibold">
+        Download Resume{" "}
+        <Image
+          src="/download.png"
+          alt="download image"
+          width={25}
+          height={25}
+          className="opacity-60 mt-1"
+        ></Image>
+      </div>
+    </section>
+  );
 }
