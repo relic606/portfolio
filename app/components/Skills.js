@@ -55,7 +55,7 @@ export default function Skills() {
                 alt={skill.language + " logo"}
                 width={50}
                 height={50}
-                className="p-2 border border-gray-50 rounded-full shadow-sm shadow-gray-400 bg-white"
+                className="p-2 border border-gray-100 rounded-full shadow-sm shadow-gray-400"
               ></Image>
               <div className="flex flex-col w-full pl-4 ">
                 <p className="font-semibold">{skill.language}</p>
