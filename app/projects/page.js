@@ -1,9 +1,12 @@
 import Image from "next/image";
+import ProjectList from "../components/ProjectList.js";
 
 export default function Projects() {
 	return (
-		<main className="flex place-content-center">
-			<ul className="flex flex-col my-8 px-20 py-8">
+		<main className="flex place-content-center max-w-screen-2xl bg-white">
+			<div>Intro text</div>
+			<ProjectList />
+			{/* <ul className="flex flex-col my-8 px-20 py-8">
 				<a
 					target="_blank"
 					href="https://share.vidyard.com/watch/QdoAUHpTjcZ34SjP5bZSqT?"
@@ -77,7 +80,7 @@ export default function Projects() {
 						</div>
 					</li>
 				</a>
-			</ul>
+			</ul> */}
 		</main>
 	);
 }
