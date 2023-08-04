@@ -74,14 +74,16 @@ export default function Skills() {
 				})}
 			</div>
 			<div className="w-full flex justify-center pt-4 pb-8 font-semibold">
-				Download Resume{" "}
-				<Image
-					src="/download.png"
-					alt="download image"
-					width={25}
-					height={25}
-					className="opacity-60 mt-1"
-				></Image>
+				<a href="/resume.pdf" download className="flex">
+					Download Resume{" "}
+					<Image
+						src="/download.png"
+						alt="download image"
+						width={25}
+						height={25}
+						className="opacity-60 mt-1"
+					></Image>
+				</a>
 			</div>
 		</section>
 	);
