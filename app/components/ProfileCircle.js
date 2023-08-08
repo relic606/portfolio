@@ -33,7 +33,7 @@ export default function ProfileCircle() {
         style={{ transform: "rotate(300deg)", animationDelay: "2.5s" }}
       ></div>
       <Image
-        src={"/profile-pic.png"}
+        src={"/profile-pic1.png"}
         alt="Andy's Photo"
         height={230}
         width={230}
