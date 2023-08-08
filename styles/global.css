@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav-link {
-  /* Regular styles for the navigation links */
-}
-
 .nav-link.active {
   /* Styles for the active link */
   color: black;
@@ -13,6 +9,8 @@
 
 .profile-circle-container {
   position: relative;
+  height: 250px;
+  width: 250px;
 }
 .circle {
   position: absolute;
@@ -20,6 +18,7 @@
   height: 250px;
   border-radius: 50%;
   background-color: rgb(8 47 73 / var(--tw-bg-opacity));
+
   animation: mymove 5s infinite;
 }
 @keyframes mymove {

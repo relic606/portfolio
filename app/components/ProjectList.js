@@ -34,10 +34,10 @@ const PROJECTS = [
 export default function ProjectList() {
   return (
     <section className="max-w-7xl p-12 my-6">
-      <div className="ml-24 mb-4">
+      {/* <div className="ml-24 mb-4">
         <h1 className="text-3xl font-semibold">Title text</h1>
         <p className="pt-4 pl-1">additional text</p>
-      </div>
+      </div> */}
       <div className="flex flex-wrap pl-20">
         {PROJECTS.map((project) => {
           return (
