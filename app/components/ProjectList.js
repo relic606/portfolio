@@ -4,7 +4,7 @@ const PROJECTS = [
   {
     title: "Card Game",
     description: "Card game built with React.js",
-    image: "/react-logo.png",
+    image: "/react-logo-skills.png",
     link: "/projects/game",
     linkText: "https://andrewtanderson.com",
   },
@@ -35,9 +35,9 @@ export default function ProjectList() {
   return (
     <section className="max-w-7xl p-12 my-6">
       {/* <div className="ml-24 mb-4">
-        <h1 className="text-3xl font-semibold">Title text</h1>
-        <p className="pt-4 pl-1">additional text</p>
-      </div> */}
+				<h1 className="text-3xl font-semibold">Title text</h1>
+				<p className="pt-4 pl-1">additional text</p>
+			</div> */}
       <div className="flex flex-wrap pl-20">
         {PROJECTS.map((project) => {
           return (
@@ -53,7 +53,9 @@ export default function ProjectList() {
                 className="border rounded-full p-2 border-gray-100 shadow-sm shadow-gray-400"
               />
               <h2 className="font-semibold">{project.title}</h2>
-              <p className="font-normal text-sm">{project.description}</p>
+              <p className="font-normal text-sm text-gray-600">
+                {project.description}
+              </p>
               <a
                 target="_blank"
                 href={project.link}
