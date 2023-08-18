@@ -6,7 +6,7 @@ import ProfileCircle from "./components/ProfileCircle";
 export default function App() {
 	return (
 		<main className="flex flex-row place-content-center m-16 rounded-lg bg-white p-8 max-w-screen-2xl mx-auto flex-wrap">
-			<section className="rounded flex place-content-center flex-col w-3/5 p-6 about-section">
+			<section className="rounded flex place-content-center flex-col p-6 about-section">
 				<div className="flex">
 					<ProfileCircle />
 				</div>
