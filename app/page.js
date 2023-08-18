@@ -5,8 +5,8 @@ import ProfileCircle from "./components/ProfileCircle";
 
 export default function App() {
 	return (
-		<main className="flex flex-row place-content-center m-16 rounded-lg bg-white p-8 max-w-screen-2xl mx-auto">
-			<section className=" rounded flex place-content-center flex-col w-3/5 p-6">
+		<main className="flex flex-row place-content-center m-16 rounded-lg bg-white p-8 max-w-screen-2xl mx-auto flex-wrap">
+			<section className="rounded flex place-content-center flex-col w-3/5 p-6 about-section">
 				<div className="flex">
 					<ProfileCircle />
 				</div>
@@ -30,7 +30,7 @@ export default function App() {
 								src="/github.png"
 								className="rounded-full"
 							></Image>
-							<p className="pl-2">Github</p>
+							<p className="pl-1 my-auto">Github</p>
 						</a>
 
 						<a
@@ -45,7 +45,7 @@ export default function App() {
 								src="/linkedin.png"
 								className="rounded-full"
 							></Image>
-							<p className="pl-2">LinkedIn</p>
+							<p className="pl-1 my-auto">LinkedIn</p>
 						</a>
 						<a
 							href="mailto:relic606@yahoo.com"
@@ -58,7 +58,7 @@ export default function App() {
 								src="/mail.png"
 								className="rounded-full"
 							></Image>
-							<p className="px-2">relic606@yahoo.com</p>
+							<p className="my-auto">relic606@yahoo.com</p>
 						</a>
 					</div>
 
