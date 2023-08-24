@@ -4,7 +4,7 @@ const PROJECTS = [
   {
     title: "Overwatch Highlights",
     description: "Watch highlights and search profile stats",
-    image: "/react-logo-skills.png",
+    image: "/next-logo.png",
     link: "/projects/overwatch",
     linkText: "https://andrewtanderson.com",
   },
