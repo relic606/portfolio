@@ -2,6 +2,13 @@ import Image from "next/image";
 
 const PROJECTS = [
   {
+    title: "Overwatch Highlights",
+    description: "Watch highlights and search profile stats",
+    image: "/react-logo-skills.png",
+    link: "/projects/overwatch",
+    linkText: "https://andrewtanderson.com",
+  },
+  {
     title: "Card Game",
     description: "Card game built with React.js",
     image: "/react-logo-skills.png",
