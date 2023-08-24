@@ -3,38 +3,48 @@
 @tailwind utilities;
 
 .nav-link.active {
-  /* Styles for the active link */
-  color: black;
+	/* Styles for the active link */
+	color: black;
 }
 
 .profile-circle-container {
-  position: relative;
-  height: 250px;
-  width: 250px;
+	position: relative;
+	height: 250px;
+	width: 250px;
 }
 .circle {
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background-color: rgb(8 47 73 / var(--tw-bg-opacity));
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-color: rgb(8 47 73 / var(--tw-bg-opacity));
 
-  animation: mymove 5s infinite;
+	animation: mymove 5s infinite;
 }
 @keyframes mymove {
-  0% {
-    border-bottom-right-radius: 50%;
-  }
-  25% {
-    border-bottom-right-radius: 44%;
-  }
-  50% {
-    border-bottom-right-radius: 47%;
-  }
-  75% {
-    border-bottom-right-radius: 44%;
-  }
-  100% {
-    border-bottom-right-radius: 50%;
-  }
+	0% {
+		border-bottom-right-radius: 50%;
+	}
+	25% {
+		border-bottom-right-radius: 44%;
+	}
+	50% {
+		border-bottom-right-radius: 47%;
+	}
+	75% {
+		border-bottom-right-radius: 44%;
+	}
+	100% {
+		border-bottom-right-radius: 50%;
+	}
+}
+
+.about-section {
+	min-width: 500px;
+	max-width: 60%;
+}
+
+.skills-section {
+	min-width: 550px;
+	max-width: 40%;
 }

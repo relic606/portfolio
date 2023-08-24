@@ -41,7 +41,7 @@ const SKILLS = [
 
 export default function Skills() {
 	return (
-		<section className="flex flex-col w-2/5 place-content-center px-8 border h-fit my-auto rounded-2xl">
+		<section className="flex flex-col place-content-center px-8 border h-fit my-auto rounded-2xl skills-section">
 			<div className="flex items-center my-4 pt-4">
 				<Image src="/skills.png" alt="skills image" width={30} height={30} />
 				<div className="pl-4 font-semibold">Skills</div>
