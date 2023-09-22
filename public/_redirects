@@ -1,5 +1,3 @@
-/projects/game/* https://warm-sunshine-014665.netlify.app/:splat 200!
-/projects/overwatch/* https://owproject-65vdjobbz-relic606.vercel.app/projects/overwatch/:splat 200!
-/projects/jobsearch/* https://owproject-65vdjobbz-relic606.vercel.app/projects/overwatch/:splat 200!
-
-
+/projects/game/_ https://warm-sunshine-014665.netlify.app/:splat 200!
+/projects/overwatch/_ https://owproject-65vdjobbz-relic606.vercel.app/projects/overwatch/:splat 200!
+/projects/jobsearch/ https://owproject-65vdjobbz-relic606.vercel.app/projects/overwatch/:splat 200!
