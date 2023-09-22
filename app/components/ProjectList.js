@@ -9,6 +9,13 @@ const PROJECTS = [
 		linkText: "https://andrewtanderson.com"
 	},
 	{
+		title: "Job Search",
+		description: "Tool to assist in job search",
+		image: "/vue-logo.png",
+		link: "/projects/jobsearch",
+		linkText: "https://andrewtanderson.com"
+	},
+	{
 		title: "Card Game",
 		description: "Card game built with React.js",
 		image: "/react-logo-skills.png",
