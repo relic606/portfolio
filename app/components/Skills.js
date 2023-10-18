@@ -9,7 +9,7 @@ const SKILLS = [
 	// },
 	{
 		language: "React, Next.js, and Vue",
-		description: "Versatile with modern front-end toolkits",
+		description: "Versatile with modern frameworks",
 		year: "2022",
 		image: "/next-logo.png"
 	},
