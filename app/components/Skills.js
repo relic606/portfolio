@@ -1,15 +1,15 @@
 import Image from "next/image";
 
 const SKILLS = [
+	// {
+	// 	language: "React.js",
+	// 	description: "Proficient in component-driven UI",
+	// 	year: "2022",
+	// 	image: "/react-logo-skills.png"
+	// },
 	{
-		language: "React.js",
-		description: "Proficient in component-driven UI",
-		year: "2022",
-		image: "/react-logo-skills.png"
-	},
-	{
-		language: "Next.js",
-		description: "Versatile with modern React toolkits",
+		language: "React, Next.js, and Vue",
+		description: "Versatile with modern front-end toolkits",
 		year: "2022",
 		image: "/next-logo.png"
 	},
@@ -26,7 +26,7 @@ const SKILLS = [
 		image: "/postgresql-logo.png"
 	},
 	{
-		language: "Javascript",
+		language: "Javascript and Typescript",
 		description: "Expert in dynamic scripting",
 		year: "2012",
 		image: "/javascript-logo.png"
