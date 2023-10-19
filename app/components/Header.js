@@ -3,46 +3,100 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+// export default function Header() {
+// 	const pathName = usePathname();
+// 	console.log(pathName);
+// 	return (
+// 		<header className="bg-sky-950 text-white py-2">
+// 			<div className="flex max-w-screen-2xl justify-between mx-auto px-2">
+// 				<Link href={"/"}>
+// 					<h2 className="flex justify-center my-auto text-xl hover:text-sky-500 transition delay-50">
+// 						Andrew Anderson
+// 					</h2>
+// 				</Link>
+// 				<nav>
+// 					<ul className="flex">
+// 						<li className="px-8">
+// 							<Link
+// 								href={"/"}
+// 								className={`${
+// 									pathName === "/"
+// 										? "inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
+// 										: "inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+// 								}`}
+// 							>
+// 								About
+// 							</Link>
+// 						</li>
+// 						<li>
+// 							<Link
+// 								href={"/projects"}
+// 								className={`rounded-full ${
+// 									pathName === "/projects"
+// 										? "text-black bg-white p-1"
+// 										: "hover:text-sky-500 transition delay-50"
+// 								}`}
+// 							>
+// 								Projects
+// 							</Link>
+// 						</li>
+// 					</ul>
+// 				</nav>
+// 			</div>
+// 		</header>
+// 	);
+// }
+
+import { Fragment } from "react";
+import { Disclosure } from "@headlessui/react";
+
+function classNames(...classes) {
+	return classes.filter(Boolean).join(" ");
+}
+
 export default function Header() {
 	const pathName = usePathname();
-	console.log(pathName);
 	return (
-		<header className="bg-sky-950 text-white py-2">
-			<div className="flex max-w-screen-2xl justify-between mx-auto px-2">
-				<Link href={"/"}>
-					<h2 className="flex justify-center my-auto text-xl hover:text-sky-500 transition delay-50">
-						Andrew Anderson
-					</h2>
-				</Link>
-				<nav>
-					<ul className="flex">
-						<li className="px-8">
-							<Link
-								href={"/"}
-								className={`rounded-full ${
-									pathName === "/"
-										? "text-black bg-white p-1"
-										: "hover:text-sky-500 transition delay-50"
-								}`}
-							>
-								About
-							</Link>
-						</li>
-						<li>
-							<Link
-								href={"/projects"}
-								className={`rounded-full ${
-									pathName === "/projects"
-										? "text-black bg-white p-1"
-										: "hover:text-sky-500 transition delay-50"
-								}`}
-							>
-								Projects
-							</Link>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+		<Disclosure as="nav" className="bg-white shadow">
+			{({ open }) => (
+				<>
+					<div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+						<div className="relative flex h-12 justify-between">
+							<div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+								{/* <div className="flex flex-shrink-0 items-center">
+									<img
+										className="h-8 w-auto"
+										src="/profile-pic1.png"
+										alt="Your Company"
+									/>
+								</div> */}
+								<div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+									<Link
+										href={"/"}
+										className={`${
+											pathName === "/"
+												? "inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
+												: "inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+										}`}
+									>
+										About
+									</Link>
+									<Link
+										href={"/projects"}
+										className={`${
+											pathName === "/projects"
+												? "inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
+												: "inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+										}`}
+									>
+										Projects
+									</Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</>
+			)}
+		</Disclosure>
 	);
 }

@@ -4,20 +4,23 @@ const PROJECTS = [
 	{
 		title: "Overwatch Highlights",
 		description: "Watch highlights and search profile stats",
+		notes: "Next.js, Tailwind, Youtube Integration, API Requests",
 		image: "/next-logo.png",
 		link: "/projects/overwatch",
 		linkText: "https://andrewtanderson.com"
 	},
 	{
-		title: "Job Search",
+		title: "Job Search Organizer",
 		description: "Tool to assist in job search",
+		notes: "Vue, Tailwind, Local Storage",
 		image: "/vue-logo.png",
 		link: "/projects/jobsearch",
 		linkText: "https://andrewtanderson.com"
 	},
 	{
 		title: "Card Game",
-		description: "Card game built with React.js",
+		description: "Tile-set game with card based combat",
+		notes: "React, Javascript",
 		image: "/react-logo-skills.png",
 		link: "/projects/game",
 		linkText: "https://andrewtanderson.com"
@@ -25,6 +28,7 @@ const PROJECTS = [
 	{
 		title: "DevMountain Web Dev Capstone",
 		description: "Full-stack event planner app",
+		notes: "React, PostgreSQL, Express, Axios",
 		image: "/full-stack.png",
 		link: "https://share.vidyard.com/watch/gWtgwMGcd6L36fTpUE8NQS?",
 		linkText: "https://share.vidyard.com"
@@ -32,13 +36,15 @@ const PROJECTS = [
 	{
 		title: "DevMountain Foundations Capstone",
 		description: "Full-stack workout planner app",
+		notes: "HTML & CSS, PostgreSQL, Express, Axios",
 		image: "/full-stack.png",
 		link: "https://share.vidyard.com/watch/QdoAUHpTjcZ34SjP5bZSqT?",
 		linkText: "https://share.vidyard.com"
 	},
 	{
 		title: "Terran Emporium",
-		description: "Codepen HTML, CSS, and Javascript Project",
+		description: "Codepen Project",
+		notes: "HTML, CSS & Javascript",
 		image: "/codepen-logo.png",
 		link: "https://codepen.io/relic606/full/LYOyvYg",
 		linkText: "https://codepen.io"
@@ -69,6 +75,9 @@ export default function ProjectList() {
 							<h2 className="font-semibold">{project.title}</h2>
 							<p className="font-normal text-sm text-gray-600">
 								{project.description}
+							</p>
+							<p className="font-normal text-xs text-gray-600">
+								- {project.notes}
 							</p>
 							<a
 								target="_blank"
