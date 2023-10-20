@@ -3,8 +3,8 @@ import Image from "next/image";
 const PROJECTS = [
 	{
 		title: "Overwatch Highlights",
-		description: "Watch highlights and search profile stats",
-		notes: "Next.js, Tailwind, Youtube Integration, API Requests",
+		description: "Watch highlights & search profile stats",
+		notes: "Next.js, Tailwind, Youtube Integration, API requests",
 		image: "/next-logo.png",
 		link: "/projects/overwatch",
 		linkText: "https://andrewtanderson.com"
@@ -26,7 +26,7 @@ const PROJECTS = [
 		linkText: "https://andrewtanderson.com"
 	},
 	{
-		title: "DevMountain Web Dev Capstone",
+		title: "Web Dev Capstone",
 		description: "Full-stack event planner app",
 		notes: "React, PostgreSQL, Express, Axios",
 		image: "/full-stack.png",
@@ -34,7 +34,7 @@ const PROJECTS = [
 		linkText: "https://share.vidyard.com"
 	},
 	{
-		title: "DevMountain Foundations Capstone",
+		title: "Foundations Capstone",
 		description: "Full-stack workout planner app",
 		notes: "HTML & CSS, PostgreSQL, Express, Axios",
 		image: "/full-stack.png",
@@ -53,38 +53,44 @@ const PROJECTS = [
 
 export default function ProjectList() {
 	return (
-		<section className="max-w-7xl p-16 mx-auto">
-			{/* <div className="ml-24 mb-4">
-				<h1 className="text-3xl font-semibold">Title text</h1>
-				<p className="pt-4 pl-1">additional text</p>
-			</div> */}
-			<div className="flex flex-wrap">
+		<section className="flex justify-center p-12">
+			<div className="flex flex-wrap justify-center gap-6">
 				{PROJECTS.map((project) => {
 					return (
 						<div
 							key={project.title}
-							className="m-8 py-4 h-60 w-80 flex flex-col justify-around"
+							className="h-72 w-96 bg-white rounded-xl p-7 flex flex-col hover:scale-105 transition-all"
 						>
-							<Image
-								src={project.image}
-								alt={project.title + " image"}
-								width={50}
-								height={50}
-								className="border rounded-full p-2 border-gray-100 shadow-sm shadow-gray-400"
-							/>
-							<h2 className="font-semibold">{project.title}</h2>
-							<p className="font-normal text-sm text-gray-600">
-								{project.description}
-							</p>
-							<p className="font-normal text-xs text-gray-600">
-								- {project.notes}
-							</p>
+							<div className="grow">
+								<div className="flex items-start">
+									<Image
+										src={project.image}
+										alt={project.title + " image"}
+										width={50}
+										height={50}
+										className="border rounded-full p-2 border-gray-100 shadow-sm shadow-gray-400"
+									/>
+
+									<h2 className="font-semibold text-2xl mx-4 my-auto">
+										{project.title}
+									</h2>
+								</div>
+								<div className="mt-6">
+									<p className="text-gray-600 mt-4 mb-4">
+										{project.description}
+									</p>
+									<p className="text-gray-600">
+										<span className="font-semibold">Technologies</span>:{" "}
+										{project.notes}
+									</p>
+								</div>
+							</div>
 							<a
 								target="_blank"
 								href={project.link}
-								className="opacity-40 text-sm flex"
+								className="opacity-40 text-sm flex items-center mt-4"
 							>
-								<div className="px-1 flex justify-center pt-1">
+								<div className="px-1 flex justify-center">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										fill="none"
@@ -105,6 +111,8 @@ export default function ProjectList() {
 						</div>
 					);
 				})}
+				<div className="h-1 w-96"></div>
+				<div className="h-1 w-96"></div>
 			</div>
 		</section>
 	);
