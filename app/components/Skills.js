@@ -74,7 +74,7 @@ export default function Skills() {
 				})}
 			</div>
 			<a
-				href="/resume.pdf"
+				href="/Andrew Anderson Resume.pdf"
 				download
 				className="w-full flex justify-center pt-4 pb-4 mb-4 font-semibold rounded-md bg-gray-50"
 			>
