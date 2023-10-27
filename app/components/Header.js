@@ -60,7 +60,7 @@ export default function Header() {
 		<Disclosure as="nav" className="bg-white shadow">
 			{({ open }) => (
 				<>
-					<div className="mx-auto lg:max-w-7xl px-8 w-full">
+					<div className="mx-auto px-12 w-full">
 						<div className="relative flex h-12">
 							<div className="flex flex-1">
 								<div className="flex sm:ml-6 sm:space-x-8 space-x-2">
@@ -86,7 +86,7 @@ export default function Header() {
 									</Link>
 								</div>
 							</div>
-							<div className="inline-flex items-center font-medium min-w-fit">
+							<div className="inline-flex items-center font-medium min-w-fit sm:pr-2">
 								Andrew Anderson
 							</div>
 						</div>
