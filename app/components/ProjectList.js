@@ -53,7 +53,7 @@ const PROJECTS = [
 
 export default function ProjectList() {
 	return (
-		<section className="flex justify-center p-12">
+		<section className="flex justify-center sm:p-12">
 			<div className="flex flex-wrap justify-center gap-6">
 				{PROJECTS.map((project) => {
 					return (

@@ -41,7 +41,7 @@ const SKILLS = [
 
 export default function Skills() {
 	return (
-		<section className="flex flex-col place-content-center px-8 border h-fit my-auto rounded-2xl skills-section">
+		<section className="flex flex-col place-content-center sm:px-8 border h-fit sm:my-auto rounded-2xl sm:skills-section px-4 mb-8">
 			<div className="flex items-center my-4 pt-4">
 				<Image src="/skills.png" alt="skills image" width={30} height={30} />
 				<div className="pl-4 font-semibold">Skills</div>
@@ -59,12 +59,12 @@ export default function Skills() {
 							></Image>
 							<div className="flex flex-col w-full pl-4 ">
 								<p className="font-semibold">{skill.language}</p>
-								<div className="flex justify-between text-gray-500 font-normal">
-									<div className="flex flex-wrap w-2/3 text-gray-500">
+								<div className="sm:flex justify-between text-gray-500 font-normal">
+									<div className="flex flex-wrap text-gray-500 my-1">
 										{" "}
 										{skill.description}
 									</div>
-									<div className="w-fit ml-4 text-gray-400">
+									<div className="w-fit sm:ml-4 text-gray-400">
 										{skill.year} &mdash; Present{" "}
 									</div>
 								</div>

@@ -5,23 +5,25 @@ import ProfileCircle from "./components/ProfileCircle";
 
 export default function App() {
 	return (
-		<main className="flex flex-row place-content-center m-16 rounded-lg bg-white p-8 max-w-screen-2xl mx-auto flex-wrap mt-12">
-			<section className="rounded flex place-content-center flex-col p-6 about-section">
-				<div className="flex">
+		<main className="flex flex-row place-content-center sm:m-16 rounded-lg bg-white sm:p-8 max-w-screen-2xl mx-auto flex-wrap my-12">
+			<section className="rounded flex place-content-center flex-col p-6 sm:about-section sm:max-w-3xl">
+				<div className="flex mx-auto sm:mx-0">
 					<ProfileCircle />
 				</div>
 
 				<div className="flex flex-col">
-					<h2 className="text-6xl font-semibold py-6">Hey, I{"'"}m Andy!</h2>
+					<h2 className="sm:text-6xl text-5xl mx-auto sm:mx-0 font-semibold py-6">
+						Hey, I{"'"}m Andy!
+					</h2>
 					<p className="">
 						I{"'"}m a full-stack web developer with a focus on front-end,
 						residing in South Jordan, Utah.
 					</p>
-					<div className="flex">
+					<div className="sm:flex my-2">
 						<a
 							target="_blank"
 							href={"https://github.com/relic606"}
-							className="hover:text-sky-500 transition delay-50 flex pr-8 py-6"
+							className="hover:text-sky-500 transition delay-50 flex sm:pr-8 sm:py-6 py-2"
 						>
 							<Image
 								alt="github image"
@@ -36,7 +38,7 @@ export default function App() {
 						<a
 							target="_blank"
 							href={"https://www.linkedin.com/in/andrew-anderson-50325749/"}
-							className="hover:text-sky-500 transition delay-50 flex px-8 py-6"
+							className="hover:text-sky-500 transition delay-50 flex sm:px-8 sm:py-6 py-2"
 						>
 							<Image
 								alt="linkedin image"
@@ -49,7 +51,7 @@ export default function App() {
 						</a>
 						<a
 							href="mailto:relic606@yahoo.com"
-							className="flex hover:text-sky-500 transition delay-50 px-8 py-6"
+							className="flex hover:text-sky-500 transition delay-50 sm:px-8 sm:py-6 py-2"
 						>
 							<Image
 								alt="email image"

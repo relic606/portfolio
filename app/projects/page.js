@@ -4,7 +4,7 @@ import ProjectList from "../components/ProjectList.js";
 export default function Projects() {
 	return (
 		<main>
-			<div className="w-fit flex mx-auto my-16 rounded-lg">
+			<div className="w-fit flex mx-auto sm:my-16 my-6 rounded-lg">
 				<ProjectList />
 			</div>
 		</main>
