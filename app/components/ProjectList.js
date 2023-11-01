@@ -18,6 +18,22 @@ const PROJECTS = [
 		linkText: "https://andrewtanderson.com"
 	},
 	{
+		title: "FAQ OpenAI Extension",
+		description: "Suggest FAQ email responses",
+		notes: "OpenAI, Local Storage, Chrome Extension",
+		image: "/javascript-logo.png",
+		link: null,
+		linkText: "Private"
+	},
+	{
+		title: "AWS Lambda Cron Function",
+		description: "Automated daily report generation",
+		notes: "AWS, Lambda, Node.js",
+		image: "/javascript-logo.png",
+		link: null,
+		linkText: "Private"
+	},
+	{
 		title: "Card Game",
 		description: "Tile-set game with card based combat",
 		notes: "React, Javascript",
@@ -85,29 +101,35 @@ export default function ProjectList() {
 									</p>
 								</div>
 							</div>
-							<a
-								target="_blank"
-								href={project.link}
-								className="opacity-40 text-sm flex items-center mt-4"
-							>
-								<div className="px-1 flex justify-center">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										strokeWidth={1.5}
-										stroke="currentColor"
-										className="w-4 h-4"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-										/>
-									</svg>
+							{project.link ? (
+								<a
+									target="_blank"
+									href={project.link}
+									className="opacity-40 text-sm flex items-center mt-4"
+								>
+									<div className="px-1 flex justify-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											strokeWidth={1.5}
+											stroke="currentColor"
+											className="w-4 h-4"
+										>
+											<path
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+											/>
+										</svg>
+									</div>
+									<div>{project.linkText}</div>
+								</a>
+							) : (
+								<div className="opacity-40 text-sm flex items-center mt-4">
+									{project.linkText}
 								</div>
-								<div>{project.linkText}</div>
-							</a>
+							)}
 						</div>
 					);
 				})}
