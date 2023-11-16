@@ -135,6 +135,8 @@ export default function ProjectList() {
 				})}
 				<div className="h-1 w-96"></div>
 				<div className="h-1 w-96"></div>
+				<div className="h-1 w-96"></div>
+				<div className="h-1 w-96"></div>
 			</div>
 		</section>
 	);
