@@ -6,7 +6,7 @@ import ProfileCircle from "./components/ProfileCircle";
 export default function App() {
 	return (
 		<main className="flex flex-row place-content-center sm:m-12 rounded-lg bg-white sm:p-8 mx-auto flex-wrap my-12 sm:gap-12">
-			<section className="rounded flex place-content-center flex-col p-6 sm:about-section sm:max-w-3xl">
+			<section className="rounded flex place-content-center flex-col p-6 sm:about-section sm:max-w-3xl ">
 				<div className="flex mx-auto sm:mx-0">
 					<ProfileCircle />
 				</div>
@@ -65,12 +65,12 @@ export default function App() {
 					</div>
 
 					<p>
-						After nearly 15 years in the insurance industry, I knew I needed a
-						change. I earned my degree in Mathematics during that time, which
-						has always been a passion of mine, and I was determined to use it!
-						Programming had always intrigued me, but after finally dipping my
-						toes into the proverbial programming pool, I was compelled to take
-						the plunge!
+						After nearly 15 years in the insurance industry, I wanted to try
+						something new. I earned my degree in Mathematics during that time,
+						which has always been a passion of mine, and I was curious to see
+						what new and exiting ways I could utilize it! Programming had always
+						intrigued me, and after finally dipping my toes into the proverbial
+						programming pool, I was compelled to take the plunge!
 					</p>
 					<br></br>
 					<p>
