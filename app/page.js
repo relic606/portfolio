@@ -67,10 +67,10 @@ export default function App() {
 					<p>
 						After nearly 15 years in the insurance industry, I wanted to try
 						something new. I earned my degree in Mathematics during that time,
-						which has always been a passion of mine, and I was curious to see
-						what new and exiting ways I could utilize it! Programming had always
-						intrigued me, and after finally dipping my toes into the proverbial
-						programming pool, I was compelled to take the plunge!
+						which has always been a passion of mine, and I was curious to
+						explore what new and exciting ways I could utilize it! Programming
+						had always intrigued me, and after finally dipping my toes into the
+						proverbial programming pool, I was compelled to take the plunge!
 					</p>
 					<br></br>
 					<p>
